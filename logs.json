@@ -1,0 +1,56 @@
+[ {
+  "timestamp" : "2025-12-20 01:59:25",
+  "user" : "admin",
+  "action" : "ADD",
+  "details" : "Added: Table"
+}, {
+  "timestamp" : "2025-12-20 02:03:58",
+  "user" : "ali",
+  "action" : "PURCHASE",
+  "details" : "Bought 1 of deneme ürün"
+}, {
+  "timestamp" : "2025-12-20 02:04:01",
+  "user" : "ali",
+  "action" : "PURCHASE",
+  "details" : "Bought 1 of iPhone 15"
+}, {
+  "timestamp" : "2025-12-20 02:27:07",
+  "user" : "ali",
+  "action" : "PURCHASE",
+  "details" : "Bought 1 of Gaming Mouse"
+}, {
+  "timestamp" : "2025-12-20 02:27:22",
+  "user" : "ali",
+  "action" : "PURCHASE",
+  "details" : "Bought 1 of deneme ürün"
+}, {
+  "timestamp" : "2025-12-20 02:28:00",
+  "user" : "admin",
+  "action" : "UPDATE",
+  "details" : "Updated: iPhone 16 to iPhone 16"
+}, {
+  "timestamp" : "2025-12-20 02:31:06",
+  "user" : "admin",
+  "action" : "PURCHASE",
+  "details" : "Bought 3 of iPhone 15"
+}, {
+  "timestamp" : "2025-12-20 02:31:17",
+  "user" : "admin",
+  "action" : "UPDATE",
+  "details" : "Updated: iPhone 15 to iPhone 15"
+}, {
+  "timestamp" : "2025-12-20 03:03:47",
+  "user" : "admin",
+  "action" : "UPDATE",
+  "details" : "Updated: Water 0.5L to Water 0.5L"
+}, {
+  "timestamp" : "2025-12-20 03:03:51",
+  "user" : "admin",
+  "action" : "DELETE",
+  "details" : "Deleted: L-Shaped Sofa"
+}, {
+  "timestamp" : "2025-12-20 03:03:55",
+  "user" : "admin",
+  "action" : "PURCHASE",
+  "details" : "Bought 1 of Winter Tire Set"
+} ]

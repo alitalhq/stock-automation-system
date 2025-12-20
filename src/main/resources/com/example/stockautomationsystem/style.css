@@ -1,0 +1,234 @@
+/* Genel Arka Plan */
+.root {
+    -fx-background-color: #1e1e2f;
+}
+
+.sidebar {
+    -fx-background-color: #27293d;
+}
+
+.header-label {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.main-header {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+/* --- GİRİŞ ALANLARI (TextField, PasswordField, ComboBox) --- */
+.text-field, .password-field, .combo-box .text-field {
+    -fx-background-color: #3e3e5e;
+    -fx-text-fill: white !important; /* Yazı rengi her zaman beyaz */
+    -fx-prompt-text-fill: #b0b0b0; /* Yer tutucu yazı rengi daha açık gri */
+    -fx-padding: 8px;
+    -fx-background-radius: 5;
+}
+
+.combo-box {
+    -fx-background-color: #3e3e5e;
+    -fx-background-radius: 5;
+    -fx-padding: 0;
+}
+
+.combo-box .arrow-button { -fx-background-color: transparent; }
+.combo-box .arrow { -fx-background-color: #ffffff; }
+
+.combo-box .list-view { -fx-background-color: #3e3e5e; -fx-border-color: #27293d; }
+.combo-box .list-cell {
+    -fx-text-fill: white !important;
+    -fx-background-color: #3e3e5e;
+}
+.combo-box .list-cell:hover { -fx-background-color: #7033ff; }
+
+/* --- TABLE VIEW (Izgara ve Netlik Ayarları) --- */
+
+.table-view {
+    -fx-background-color: #27293d;
+    -fx-border-color: #3e3e5e;
+}
+
+/* Tablo Başlıkları */
+.table-view .column-header-background { -fx-background-color: #3e3e5e; }
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-border-color: #27293d;
+    -fx-size: 40px;
+    -fx-cursor: default;
+}
+.table-view .column-header .label {
+    -fx-text-fill: #ffffff !important;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+}
+
+/* Tablonun sonundaki gereksiz boş sütun alanını temanın rengiyle kapat */
+.table-view .filler {
+    -fx-background-color: #27293d; /* Tablo iç rengiyle aynı yap */
+    -fx-border-color: transparent;
+}
+
+/* Satır ve Hücre Yazı Renkleri */
+.table-row-cell {
+    -fx-background-color: #27293d;
+}
+
+.table-cell {
+    -fx-text-fill: white !important; /* Hücre içindeki metni beyaza zorla */
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 0 10 0 10;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #2c2e43;
+}
+
+/* Seçili Satır */
+.table-row-cell:selected {
+    -fx-background-color: #7033ff;
+}
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: white !important;
+}
+
+/* Sanal Izgara (Ürün yokken görünen çizgiler) */
+.table-view .virtual-flow {
+    -fx-background-color:
+            linear-gradient(from 0px 0px to 0px 30px,
+            #27293d 0%, #27293d 97%,
+            #3e3e5e 97%, #3e3e5e 100%);
+    -fx-background-repeat: repeat;
+}
+
+/* Sıralama oklarının rengini beyaz yap (Koyu tema için) */
+.table-view .column-header .sort-order-dot {
+    -fx-background-color: white;
+}
+
+.table-view .column-header .arrow {
+    -fx-background-color: white; /* Okun rengi */
+    -fx-padding: 3px;
+    -fx-opacity: 0 !important;
+    -fx-shape: "";
+}
+
+/* Sütun başlığına tıklandığında hafif bir parlama efekti */
+.table-view .column-header:hover {
+    -fx-background-color: transparent;}
+
+.table-view .placeholder { -fx-background-color: transparent; }
+.table-view .placeholder .label { -fx-text-fill: transparent; }
+
+.table-column {
+    -fx-border-color: #3e3e5e;
+    -fx-border-width: 0 1 0 0;
+}
+
+/* --- BUTONLAR --- */
+.add-button { -fx-background-color: #7033ff; -fx-text-fill: white; -fx-font-weight: bold; -fx-cursor: hand; }
+.buy-button { -fx-background-color: #2ecc71; -fx-text-fill: white; -fx-font-weight: bold; -fx-cursor: hand; }
+.edit-button { -fx-background-color: #3498db; -fx-text-fill: white; -fx-font-weight: bold; -fx-cursor: hand; }
+.delete-button { -fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-weight: bold; -fx-cursor: hand; }
+
+.button:hover { -fx-opacity: 0.85; }
+.button:pressed { -fx-opacity: 0.7; }
+
+/* Dialog (Düzenleme Penceresi) Arka Planı */
+.dialog-pane {
+    -fx-background-color: #27293d;
+}
+
+.dialog-pane > .content.label {
+    -fx-text-fill: white;
+}
+
+.dialog-pane .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane .button {
+    -fx-background-color: #3e3e5e;
+    -fx-text-fill: white;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #7033ff;
+}
+
+/* MenuButton'ın dış çerçevesini ve arka planını temizle */
+.menu-button {
+    -fx-background-color: transparent; /* Kare görüntüsünü silmek için şeffaf yap */
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent; /* Kenar çizgilerini yok et */
+    -fx-border-width: 0;
+}
+
+/* Butonun üzerine gelindiğinde veya odaklandığında çıkan o kareyi engelle */
+.menu-button:focused, .menu-button:hover {
+    -fx-background-color: #3e3e5e; /* Sadece hafif bir renk değişimi ver */
+    -fx-background-insets: 0;
+    -fx-faint-focus-color: transparent;
+    -fx-focus-color: transparent;
+}
+
+/* Ok işaretini ve metni beyaz tutmaya devam et */
+.menu-button .label {
+    -fx-text-fill: white;
+}
+
+.menu-button .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.menu-button .arrow {
+    -fx-background-color: white;
+}
+
+.context-menu {
+    -fx-background-color: #3e3e5e;
+    -fx-border-color: #7033ff;
+}
+
+.menu-item .label {
+    -fx-text-fill: white;
+}
+
+.menu-item:focused {
+    -fx-background-color: #7033ff;
+}
+
+/* --- SCROLLBAR'I TAMAMEN GİZLE --- */
+
+/* Hem dikey hem yatay çubuğu ve tüm bileşenlerini yok et */
+.table-view .scroll-bar:vertical,
+.table-view .scroll-bar:vertical .track,
+.table-view .scroll-bar:vertical .thumb,
+.table-view .scroll-bar:horizontal,
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:horizontal .thumb {
+    -fx-background-color: transparent;
+    -fx-padding: -5; /* Çubuğun kapladığı alanı sıfırlamak için */
+    -fx-opacity: 0;
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+}
+
+/* Ok butonlarını ve diğer tüm parçaları da temizle */
+.table-view .scroll-bar .increment-button,
+.table-view .scroll-bar .decrement-button,
+.table-view .scroll-bar .increment-arrow,
+.table-view .scroll-bar .decrement-arrow {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-shape: "";
+}
+
+/* Scrollbar gittiğinde sağ üst köşede kalan boşluğu tablo başlığı rengiyle eşitle */
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}

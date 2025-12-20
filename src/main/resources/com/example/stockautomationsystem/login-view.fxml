@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20" styleClass="root" stylesheets="@style.css"
+      xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.stockautomationsystem.controller.LoginController">
+
+    <padding><Insets bottom="40" left="40" right="40" top="40" /></padding>
+
+    <Label styleClass="main-header" text="Login" />
+
+    <VBox spacing="10">
+        <TextField fx:id="usernameField" promptText="Username" />
+        <PasswordField fx:id="passwordField" promptText="Password" />
+    </VBox>
+
+    <HBox spacing="15" alignment="CENTER">
+        <Button onAction="#handleLogin" prefWidth="100" styleClass="buy-button" text="LOGIN" />
+        <Button onAction="#handleRegister" prefWidth="100" styleClass="add-button" text="REGISTER" />
+    </HBox>
+</VBox>

@@ -1,0 +1,205 @@
+[ {
+  "name" : "Fiat Doblo",
+  "category" : "Automotive",
+  "price" : 850000.0,
+  "stockQuantity" : 119,
+  "logDetails" : "Ürün: Fiat Doblo | Kat: Automotive | Fiyat: 850000,00 | Stok: 119"
+}, {
+  "name" : "iPhone 15",
+  "category" : "Electronics",
+  "price" : 55000.0,
+  "stockQuantity" : 10,
+  "logDetails" : "Ürün: iPhone 15 | Kat: Electronics | Fiyat: 55000,00 | Stok: 10"
+}, {
+  "name" : "Gaming Mouse",
+  "category" : "Electronics",
+  "price" : 450.0,
+  "stockQuantity" : 9,
+  "logDetails" : "Ürün: Gaming Mouse | Kat: Electronics | Fiyat: 450,00 | Stok: 9"
+}, {
+  "name" : "Coffee Beans",
+  "category" : "Grocery",
+  "price" : 120.0,
+  "stockQuantity" : 20,
+  "logDetails" : "Ürün: Coffee Beans | Kat: Grocery | Fiyat: 120,00 | Stok: 20"
+}, {
+  "name" : "iPhone 16 Pro",
+  "category" : "Electronics",
+  "price" : 75000.0,
+  "stockQuantity" : 10,
+  "logDetails" : "Ürün: iPhone 16 Pro | Kat: Electronics | Fiyat: 75000,00 | Stok: 10"
+}, {
+  "name" : "Water 0.5L",
+  "category" : "Drink",
+  "price" : 10.0,
+  "stockQuantity" : 100,
+  "logDetails" : "Ürün: Water 0.5L | Kat: Drink | Fiyat: 10,00 | Stok: 100"
+}, {
+  "name" : "Dining Table",
+  "category" : "Furniture",
+  "price" : 4500.0,
+  "stockQuantity" : 2,
+  "logDetails" : "Ürün: Dining Table | Kat: Furniture | Fiyat: 4500,00 | Stok: 2"
+}, {
+  "name" : "MacBook Pro M3",
+  "category" : "Electronics",
+  "price" : 95000.0,
+  "stockQuantity" : 7,
+  "logDetails" : "Ürün: MacBook Pro M3 | Kat: Electronics | Fiyat: 95000,00 | Stok: 7"
+}, {
+  "name" : "Samsung S24 Ultra",
+  "category" : "Electronics",
+  "price" : 68000.0,
+  "stockQuantity" : 15,
+  "logDetails" : "Ürün: Samsung S24 Ultra | Kat: Electronics | Fiyat: 68000,00 | Stok: 15"
+}, {
+  "name" : "AirPods Pro 2",
+  "category" : "Electronics",
+  "price" : 8500.0,
+  "stockQuantity" : 40,
+  "logDetails" : "Ürün: AirPods Pro 2 | Kat: Electronics | Fiyat: 8500,00 | Stok: 40"
+}, {
+  "name" : "Winter Tire Set",
+  "category" : "Automotive",
+  "price" : 14000.0,
+  "stockQuantity" : 19,
+  "logDetails" : "Ürün: Winter Tire Set | Kat: Automotive | Fiyat: 14000,00 | Stok: 19"
+}, {
+  "name" : "Engine Oil 5W-30",
+  "category" : "Automotive",
+  "price" : 1200.0,
+  "stockQuantity" : 50,
+  "logDetails" : "Ürün: Engine Oil 5W-30 | Kat: Automotive | Fiyat: 1200,00 | Stok: 50"
+}, {
+  "name" : "Brake Pad",
+  "category" : "Automotive",
+  "price" : 850.0,
+  "stockQuantity" : 4,
+  "logDetails" : "Ürün: Brake Pad | Kat: Automotive | Fiyat: 850,00 | Stok: 4"
+}, {
+  "name" : "Tesla Wall Connector",
+  "category" : "Automotive",
+  "price" : 18000.0,
+  "stockQuantity" : 6,
+  "logDetails" : "Ürün: Tesla Wall Connector | Kat: Automotive | Fiyat: 18000,00 | Stok: 6"
+}, {
+  "name" : "Office Chair Ergonomic",
+  "category" : "Furniture",
+  "price" : 3200.0,
+  "stockQuantity" : 12,
+  "logDetails" : "Ürün: Office Chair Ergonomic | Kat: Furniture | Fiyat: 3200,00 | Stok: 12"
+}, {
+  "name" : "Bookshelf Walnut",
+  "category" : "Furniture",
+  "price" : 1800.0,
+  "stockQuantity" : 8,
+  "logDetails" : "Ürün: Bookshelf Walnut | Kat: Furniture | Fiyat: 1800,00 | Stok: 8"
+}, {
+  "name" : "Queen Size Bed",
+  "category" : "Furniture",
+  "price" : 15000.0,
+  "stockQuantity" : 5,
+  "logDetails" : "Ürün: Queen Size Bed | Kat: Furniture | Fiyat: 15000,00 | Stok: 5"
+}, {
+  "name" : "Olive Oil 5L",
+  "category" : "Grocery",
+  "price" : 1800.0,
+  "stockQuantity" : 35,
+  "logDetails" : "Ürün: Olive Oil 5L | Kat: Grocery | Fiyat: 1800,00 | Stok: 35"
+}, {
+  "name" : "Basmati Rice 5kg",
+  "category" : "Grocery",
+  "price" : 450.0,
+  "stockQuantity" : 100,
+  "logDetails" : "Ürün: Basmati Rice 5kg | Kat: Grocery | Fiyat: 450,00 | Stok: 100"
+}, {
+  "name" : "Black Tea 1kg",
+  "category" : "Grocery",
+  "price" : 280.0,
+  "stockQuantity" : 150,
+  "logDetails" : "Ürün: Black Tea 1kg | Kat: Grocery | Fiyat: 280,00 | Stok: 150"
+}, {
+  "name" : "Honey Organic",
+  "category" : "Grocery",
+  "price" : 350.0,
+  "stockQuantity" : 4,
+  "logDetails" : "Ürün: Honey Organic | Kat: Grocery | Fiyat: 350,00 | Stok: 4"
+}, {
+  "name" : "Orange Juice 1L",
+  "category" : "Drink",
+  "price" : 45.0,
+  "stockQuantity" : 80,
+  "logDetails" : "Ürün: Orange Juice 1L | Kat: Drink | Fiyat: 45,00 | Stok: 80"
+}, {
+  "name" : "Mineral Water 6-Pack",
+  "category" : "Drink",
+  "price" : 60.0,
+  "stockQuantity" : 200,
+  "logDetails" : "Ürün: Mineral Water 6-Pack | Kat: Drink | Fiyat: 60,00 | Stok: 200"
+}, {
+  "name" : "Energy Drink",
+  "category" : "Drink",
+  "price" : 55.0,
+  "stockQuantity" : 120,
+  "logDetails" : "Ürün: Energy Drink | Kat: Drink | Fiyat: 55,00 | Stok: 120"
+}, {
+  "name" : "Red Wine Cabernet",
+  "category" : "Drink",
+  "price" : 750.0,
+  "stockQuantity" : 24,
+  "logDetails" : "Ürün: Red Wine Cabernet | Kat: Drink | Fiyat: 750,00 | Stok: 24"
+}, {
+  "name" : "Mechanical Keyboard",
+  "category" : "Electronics",
+  "price" : 2400.0,
+  "stockQuantity" : 18,
+  "logDetails" : "Ürün: Mechanical Keyboard | Kat: Electronics | Fiyat: 2400,00 | Stok: 18"
+}, {
+  "name" : "Ultrawide Monitor 34\"",
+  "category" : "Electronics",
+  "price" : 14500.0,
+  "stockQuantity" : 9,
+  "logDetails" : "Ürün: Ultrawide Monitor 34\" | Kat: Electronics | Fiyat: 14500,00 | Stok: 9"
+}, {
+  "name" : "Bose QuietComfort",
+  "category" : "Electronics",
+  "price" : 12000.0,
+  "stockQuantity" : 22,
+  "logDetails" : "Ürün: Bose QuietComfort | Kat: Electronics | Fiyat: 12000,00 | Stok: 22"
+}, {
+  "name" : "Electric Drill",
+  "category" : "Tools",
+  "price" : 2800.0,
+  "stockQuantity" : 14,
+  "logDetails" : "Ürün: Electric Drill | Kat: Tools | Fiyat: 2800,00 | Stok: 14"
+}, {
+  "name" : "Screwdriver Set",
+  "category" : "Tools",
+  "price" : 650.0,
+  "stockQuantity" : 45,
+  "logDetails" : "Ürün: Screwdriver Set | Kat: Tools | Fiyat: 650,00 | Stok: 45"
+}, {
+  "name" : "Hammer Steel",
+  "category" : "Tools",
+  "price" : 350.0,
+  "stockQuantity" : 30,
+  "logDetails" : "Ürün: Hammer Steel | Kat: Tools | Fiyat: 350,00 | Stok: 30"
+}, {
+  "name" : "Yoga Mat",
+  "category" : "Sports",
+  "price" : 850.0,
+  "stockQuantity" : 60,
+  "logDetails" : "Ürün: Yoga Mat | Kat: Sports | Fiyat: 850,00 | Stok: 60"
+}, {
+  "name" : "Dumbbell Set 20kg",
+  "category" : "Sports",
+  "price" : 1600.0,
+  "stockQuantity" : 10,
+  "logDetails" : "Ürün: Dumbbell Set 20kg | Kat: Sports | Fiyat: 1600,00 | Stok: 10"
+}, {
+  "name" : "Tennis Racket",
+  "category" : "Sports",
+  "price" : 3500.0,
+  "stockQuantity" : 5,
+  "logDetails" : "Ürün: Tennis Racket | Kat: Sports | Fiyat: 3500,00 | Stok: 5"
+} ]

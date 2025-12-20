@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.stockautomationsystem.controller.MainController"
+            stylesheets="@style.css">
+
+    <top>
+        <HBox spacing="10" alignment="CENTER_RIGHT" style="-fx-background-color: #27293d;">
+            <padding><Insets top="10" right="20" bottom="10" left="20"/></padding>
+            <Label text="STOCK AUTOMATION SYSTEM" styleClass="header-label" style="-fx-font-size: 16px;"/>
+            <Region HBox.hgrow="ALWAYS" />
+            <MenuButton fx:id="userMenu" text="User" styleClass="menu-button" focusTraversable="false">
+                <items>
+                    <MenuItem text="🚪 Logout" onAction="#handleLogout" />
+                </items>
+            </MenuButton>
+        </HBox>
+    </top>
+
+    <left>
+        <VBox fx:id="sidebar" spacing="15" styleClass="sidebar" prefWidth="250">
+            <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+            <Label text="New Product" styleClass="header-label"/>
+
+            <TextField fx:id="nameField" promptText="Product Name"/>
+            <ComboBox fx:id="categoryCombo" promptText="Select Category" maxWidth="Infinity" editable="true"/>
+            <TextField fx:id="priceField" promptText="Price (TL)"/>
+            <TextField fx:id="stockField" promptText="Stock Quantity"/>
+
+            <Button text="+ ADD PRODUCT" onAction="#handleAdd" maxWidth="Infinity" styleClass="add-button"/>
+
+            <Region VBox.vgrow="ALWAYS" />
+
+            <Separator />
+
+            <Button fx:id="logButton" text="📋 View System Logs" onAction="#handleViewLogs"
+                    maxWidth="Infinity" styleClass="edit-button" />
+        </VBox>
+    </left>
+
+    <center>
+        <VBox spacing="10">
+            <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+            <Label text="Product List" styleClass="main-header"/>
+
+            <TableView fx:id="productTable" id="productTable" VBox.vgrow="ALWAYS">
+                <columnResizePolicy>
+                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                </columnResizePolicy>
+                <columns>
+                    <TableColumn fx:id="colName" text="Name"/>
+                    <TableColumn fx:id="colCategory" text="Category"/>
+                    <TableColumn fx:id="colPrice" text="Price (TL)"/>
+                    <TableColumn fx:id="colStock" text="Stock"/>
+                </columns>
+            </TableView>
+
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Button text="BUY" onAction="#handleBuy" styleClass="buy-button"/>
+                <Button fx:id="editButton" text="EDIT" onAction="#handleUpdate" styleClass="edit-button"/>
+                <Button fx:id="deleteButton" text="DELETE" onAction="#handleDelete" styleClass="delete-button"/>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>
