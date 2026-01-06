@@ -53,4 +53,29 @@
   "user" : "admin",
   "action" : "PURCHASE",
   "details" : "Bought 1 of Winter Tire Set"
+}, {
+  "timestamp" : "2026-01-06 15:09:43",
+  "user" : "ali",
+  "action" : "PURCHASE",
+  "details" : "Bought 1 units of Dining Table"
+}, {
+  "timestamp" : "2026-01-06 15:13:21",
+  "user" : "admin",
+  "action" : "DELETE",
+  "details" : "Deleted: Coffee Beans"
+}, {
+  "timestamp" : "2026-01-06 15:13:38",
+  "user" : "admin",
+  "action" : "UPDATE",
+  "details" : "Updated: Water 0.5L to Water 0.5L"
+}, {
+  "timestamp" : "2026-01-06 15:41:42",
+  "user" : "admin",
+  "action" : "ADD",
+  "details" : "Added: a"
+}, {
+  "timestamp" : "2026-01-06 15:41:47",
+  "user" : "admin",
+  "action" : "DELETE",
+  "details" : "Deleted: a"
 } ]
