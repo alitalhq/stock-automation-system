@@ -173,47 +173,62 @@ public class MainController {
     }
 
     @FXML
+    private void handleDelete() {
+        Product selected = productTable.getSelectionModel().getSelectedItem();
+        if (selected != null) {
+            // PDF raporundaki onay kutusu mantığı [cite: 309, 310]
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setTitle("Delete Confirmation");
+            alert.setHeaderText("Deleting: " + selected.getName());
+            alert.setContentText("Are you sure you want to delete this product? This action cannot be undone.");
+
+            // Kullanıcı 'YES' derse silme işlemini yap
+            Optional<ButtonType> result = alert.showAndWait();
+            if (result.isPresent() && result.get() == ButtonType.OK) {
+                addLog("DELETE", "Removed product: " + selected.getName());
+                productList.remove(selected);
+                save();
+                refreshCategories();
+            }
+        }
+    }
+    @FXML
     private void handleBuy() {
         Product selected = productTable.getSelectionModel().getSelectedItem();
         if (selected == null) return;
 
         TextInputDialog dialog = new TextInputDialog("1");
-        dialog.setTitle("Purchase");
-        dialog.setHeaderText("Purchasing: " + selected.getName());
-        dialog.setContentText("Enter quantity:");
+        dialog.setTitle("Purchase Product");
+        dialog.setHeaderText("Buying: " + selected.getName());
+        dialog.setContentText("Please enter the quantity:");
 
         Optional<String> result = dialog.showAndWait();
         result.ifPresent(qtyStr -> {
             try {
                 int qty = Integer.parseInt(qtyStr);
-                if (qty <= 0) throw new InvalidProductException("Quantity must be positive!");
 
-                selected.reduceStock(qty); // Custom Exception (InsufficientStock) burada fırlatılır
-                save();
-                addLog("PURCHASE", "Sold " + qty + " units of " + selected.getName());
-                productTable.refresh();
-                showInfo("Success", "Purchase completed!");
+                // NEGATİF / 0 KONTROLÜ
+                if (qty <= 0) {
+                    showError("Input Error", "Quantity must be greater than 0.");
+                    return;
+                }
 
-            } catch (InsufficientStockException | InvalidProductException e) {
-                showError("Transaction Failed", e.getMessage());
+                Alert confirm = new Alert(Alert.AlertType.CONFIRMATION);
+                confirm.setTitle("Confirm Purchase");
+                confirm.setContentText("Are you sure you want to buy " + qty + " units?");
+
+                if (confirm.showAndWait().get() == ButtonType.OK) {
+                    selected.reduceStock(qty);
+                    save();
+                    addLog("PURCHASE", "Bought " + qty + " units of " + selected.getName());
+                    productTable.refresh();
+                }
+            } catch (InsufficientStockException e) {
+                showError("Stock Error", e.getMessage());
             } catch (NumberFormatException e) {
                 showError("Input Error", "Please enter a valid number.");
             }
         });
-    }
-
-    @FXML
-    private void handleDelete() {
-        Product s = productTable.getSelectionModel().getSelectedItem();
-        if (s != null) {
-            Alert confirm = new Alert(Alert.AlertType.CONFIRMATION, "Delete " + s.getName() + "?", ButtonType.YES, ButtonType.NO);
-            if (confirm.showAndWait().get() == ButtonType.YES) {
-                addLog("DELETE", "Removed product: " + s.getName());
-                productList.remove(s);
-                save();
-                refreshCategories();
-            }
-        }
     }
 
     @FXML

@@ -17,12 +17,7 @@
   "name" : "iPhone 16 Pro",
   "category" : "Electronics",
   "price" : 75000.0,
-  "stockQuantity" : 8
-}, {
-  "name" : "Water 0.5L",
-  "category" : "Drink",
-  "price" : 10.0,
-  "stockQuantity" : 103
+  "stockQuantity" : 5
 }, {
   "name" : "Dining Table",
   "category" : "Furniture",
@@ -42,12 +37,12 @@
   "name" : "AirPods Pro 2",
   "category" : "Electronics",
   "price" : 8500.0,
-  "stockQuantity" : 40
+  "stockQuantity" : 39
 }, {
   "name" : "Winter Tire Set",
   "category" : "Automotive",
   "price" : 14000.0,
-  "stockQuantity" : 19
+  "stockQuantity" : 23
 }, {
   "name" : "Engine Oil 5W-30",
   "category" : "Automotive",

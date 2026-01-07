@@ -83,4 +83,29 @@
   "user" : "ali",
   "action" : "PURCHASE",
   "details" : "Bought 2 units of iPhone 16 Pro"
+}, {
+  "timestamp" : "2026-01-07 11:02:32",
+  "user" : "admin",
+  "action" : "DELETE",
+  "details" : "Removed product: Water 0.5L"
+}, {
+  "timestamp" : "2026-01-07 11:02:35",
+  "user" : "admin",
+  "action" : "PURCHASE",
+  "details" : "Bought 1 units of AirPods Pro 2"
+}, {
+  "timestamp" : "2026-01-07 11:02:40",
+  "user" : "admin",
+  "action" : "UPDATE",
+  "details" : "Updated Bookshelf Walnut info."
+}, {
+  "timestamp" : "2026-01-07 11:02:43",
+  "user" : "admin",
+  "action" : "PURCHASE",
+  "details" : "Bought 1 units of Winter Tire Set"
+}, {
+  "timestamp" : "2026-01-07 11:02:50",
+  "user" : "admin",
+  "action" : "PURCHASE",
+  "details" : "Bought 3 units of iPhone 16 Pro"
 } ]
