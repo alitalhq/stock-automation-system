@@ -45,7 +45,13 @@
     <center>
         <VBox spacing="10">
             <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
-            <Label text="Product List" styleClass="main-header"/>
+
+            <HBox alignment="CENTER_LEFT" spacing="20">
+                <Label text="Product List" styleClass="main-header"/>
+                <Region HBox.hgrow="ALWAYS" />
+                <TextField fx:id="searchField" promptText="🔍 Search by name or category..." prefWidth="300"
+                           style="-fx-background-radius: 15; -fx-padding: 5 15;"/>
+            </HBox>
 
             <TableView fx:id="productTable" id="productTable" VBox.vgrow="ALWAYS">
                 <columnResizePolicy>

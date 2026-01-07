@@ -22,7 +22,7 @@
   "name" : "Water 0.5L",
   "category" : "Drink",
   "price" : 10.0,
-  "stockQuantity" : 100
+  "stockQuantity" : 103
 }, {
   "name" : "Dining Table",
   "category" : "Furniture",
