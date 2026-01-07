@@ -160,7 +160,7 @@ public class MainController {
                 productTable.refresh();
 
             } catch (InvalidProductException e) {
-                // Bizim özel hata mesajımızı gösterir
+                // Bizim özel hata mesajımızı gösterir yanlış ürün bilgilerini yakalar
                 showError("Invalid Data", e.getMessage());
             } catch (NumberFormatException e) {
                 // Sayı formatı hatalarını yakalar

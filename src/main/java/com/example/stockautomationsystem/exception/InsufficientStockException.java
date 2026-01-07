@@ -1,5 +1,5 @@
 package com.example.stockautomationsystem.exception;
-
+w
 //yetersiz stok hatasi
 public class InsufficientStockException extends RuntimeException {
     public InsufficientStockException(String productName, int requested, int available) {
