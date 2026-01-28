@@ -68,7 +68,7 @@ Execute the following commands in your terminal to set up and run the project:
 
 ```bash
 # Clone the repository
-git clone [https://github.com/yourusername/stock-automation-system.git](https://github.com/yourusername/stock-automation-system.git)
+git clone https://github.com/alitalhq/stock-automation-system.git
 
 # Navigate to the project directory
 cd stock-automation-system
